@@ -1,28 +1,8 @@
 ---
-import '../styles/global.css';
-const pageTitle = "Mi blog de Astro aprendizaje";
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Bienvenido a Alfgow";
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-        
-        <a href="/">Inicio</a>
-<a href="/about/">Sobre mi</a>
-<a href="/blog/">Mi Blog</a>
-
-
-		<h1>Bienvenido a {pageTitle}</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam odit ullam dolor recusandae fugiat? Nisi tempore aliquam fugit suscipit atque labore totam a doloribus sint ducimus, dolore, vel, culpa accusantium.</p>
-	</body>
-</html>
-
-
-
+<BaseLayout pageTitle={pageTitle}>
+    <h2>Subtitulo del blog</h2>
+</BaseLayout>
